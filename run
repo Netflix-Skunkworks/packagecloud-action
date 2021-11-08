@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /package_cloud
+bundle exec package_cloud netflix/${1}/ubuntu/bionic ${2}
+

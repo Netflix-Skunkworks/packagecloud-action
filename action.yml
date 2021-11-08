@@ -1,0 +1,15 @@
+name: 'PackageCloud'
+description: 'Upload deb to package cloud.'
+inputs:
+  repo:
+    description: 'repo name to use'
+    required: 'true'
+  pkg:
+    description: 'package to upload'
+    required: 'true'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.repo }}
+    - ${{ inputs.pkg }}
