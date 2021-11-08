@@ -1,5 +1,5 @@
 #!/bin/sh
 
 cd /package_cloud
-bundle exec package_cloud ${1} ${2}
+bundle exec package_cloud push --yes ${1} ${2}
 
