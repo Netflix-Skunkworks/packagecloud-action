@@ -1,4 +1,4 @@
-FROM ruby:3
+FROM ruby:2
 
 COPY package_cloud /package_cloud
 COPY entrypoint.sh /entrypoint.sh
