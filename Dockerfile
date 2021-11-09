@@ -1,9 +1,9 @@
 FROM ruby:3
 
 COPY package_cloud /package_cloud
-COPY run /run
+COPY entrypoint.sh /entrypoint.sh
 
 RUN cd /package_cloud && bundle update --bundler && bundle install
 
-ENTRYPOINT ["/run"]
+ENTRYPOINT ["/entrypoint.sh"]
 CMD []
